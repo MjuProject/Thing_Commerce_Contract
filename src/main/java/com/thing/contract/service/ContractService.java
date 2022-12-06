@@ -1,6 +1,6 @@
-package com.example.orderservice.service;
+package com.thing.contract.service;
 
-import com.example.orderservice.dto.ContractDto;
+import com.thing.contract.dto.ContractDto;
 
 import java.util.List;
 

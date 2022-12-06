@@ -1,20 +1,18 @@
-package com.example.orderservice.service;
+package com.thing.contract.service;
 
-import com.example.orderservice.client.ClientDto;
-import com.example.orderservice.client.ClientServiceFeignClient;
-import com.example.orderservice.client.ItemDto;
-import com.example.orderservice.client.ItemServiceFeignClient;
-import com.example.orderservice.dto.ContractDto;
-import com.example.orderservice.jpa.ContractEntity;
-import com.example.orderservice.jpa.ContractRepository;
-import feign.Contract;
+import com.thing.contract.client.ClientDto;
+import com.thing.contract.client.ClientServiceFeignClient;
+import com.thing.contract.client.ItemDto;
+import com.thing.contract.client.ItemServiceFeignClient;
+import com.thing.contract.dto.ContractDto;
+import com.thing.contract.jpa.ContractEntity;
+import com.thing.contract.jpa.ContractRepository;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.Date;
 import java.util.List;
-import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Service

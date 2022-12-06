@@ -1,4 +1,4 @@
-package com.example.orderservice;
+package com.thing.contract;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

@@ -1,7 +1,7 @@
-package com.example.orderservice.dto;
+package com.thing.contract.dto;
 
-import com.example.orderservice.client.ClientDto;
-import com.example.orderservice.client.ItemDto;
+import com.thing.contract.client.ClientDto;
+import com.thing.contract.client.ItemDto;
 import lombok.Data;
 
 import java.util.Date;

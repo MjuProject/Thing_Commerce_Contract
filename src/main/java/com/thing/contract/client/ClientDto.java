@@ -1,4 +1,4 @@
-package com.example.orderservice.client;
+package com.thing.contract.client;
 
 import lombok.*;
 

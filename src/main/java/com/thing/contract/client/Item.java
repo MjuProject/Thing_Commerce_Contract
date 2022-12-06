@@ -1,8 +1,7 @@
-package com.example.orderservice.client;
+package com.thing.contract.client;
 
 import lombok.*;
 
-import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 

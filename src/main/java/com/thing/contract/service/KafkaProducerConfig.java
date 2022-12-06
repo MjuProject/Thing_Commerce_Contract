@@ -1,4 +1,4 @@
-package com.example.orderservice.service;
+package com.thing.contract.service;
 
 import org.apache.kafka.clients.producer.ProducerConfig;
 import org.apache.kafka.common.serialization.StringSerializer;

@@ -1,4 +1,4 @@
-package com.example.orderservice.jpa;
+package com.thing.contract.jpa;
 
 
 import lombok.Data;

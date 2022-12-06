@@ -1,4 +1,4 @@
-package com.example.orderservice.dto;
+package com.thing.contract.dto;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.*;

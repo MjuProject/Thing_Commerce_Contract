@@ -1,6 +1,6 @@
-package com.example.orderservice.client;
+package com.thing.contract.client;
 
-import com.example.orderservice.dto.ApiResponseDto;
+import com.thing.contract.dto.ApiResponseDto;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
