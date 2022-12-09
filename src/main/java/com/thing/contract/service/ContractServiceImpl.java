@@ -1,13 +1,12 @@
 package com.thing.contract.service;
 
-import com.thing.contract.client.ClientDto;
+import com.thing.contract.dto.ClientDto;
 import com.thing.contract.client.ClientServiceFeignClient;
-import com.thing.contract.client.ItemDto;
+import com.thing.contract.dto.ItemDto;
 import com.thing.contract.client.ItemServiceFeignClient;
 import com.thing.contract.dto.ContractDto;
-import com.thing.contract.jpa.ContractEntity;
+import com.thing.contract.domain.ContractEntity;
 import com.thing.contract.jpa.ContractRepository;
-import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

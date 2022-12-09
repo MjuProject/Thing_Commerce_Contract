@@ -13,8 +13,8 @@ import java.util.List;
 @RequestMapping("/contracts")
 public class ContractController {
 
-    KafkaProducer kafkaProducer;
-    ContractService contractService;
+    private KafkaProducer kafkaProducer;
+    private ContractService contractService;
 
     @Autowired
     public ContractController(KafkaProducer kafkaProducer, ContractService contractService){
@@ -29,16 +29,16 @@ public class ContractController {
     }
 
     @PostMapping("/clients/{client-index}/items/{item-id}")
-    public ApiResponseDto createContract(@PathVariable("client-index")int clientIndex, @PathVariable("item-id")int itemId){
+    public ApiResponseDto createContract(@PathVariable("client-index") int clientIndex, @PathVariable("item-id") int itemId){
         contractService.createContract(clientIndex, itemId);
         kafkaProducer.send("itemSold_topic", itemId);
-        return  ApiResponseDto.success();
+        return ApiResponseDto.success();
     }
 
     @GetMapping("/clients/{client-index}")
     public ApiResponseDto getContractListByClientIndex(@PathVariable("client-index")int clientIndex){
         List<ContractDto> contractDtoList = contractService.getContractListByClientIndex(clientIndex);
-        return ApiResponseDto.success();
+        return ApiResponseDto.success(contractDtoList);
     }
 
 }

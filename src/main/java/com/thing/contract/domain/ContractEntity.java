@@ -1,4 +1,4 @@
-package com.thing.contract.jpa;
+package com.thing.contract.domain;
 
 
 import lombok.Data;
@@ -9,11 +9,11 @@ import java.util.Date;
 
 @Data
 @Entity
-@Table(name = "contracts")
+@Table(name = "contract")
 public class ContractEntity {
 
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
     @Column(nullable = false)

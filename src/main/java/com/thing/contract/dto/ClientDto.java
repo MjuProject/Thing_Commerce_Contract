@@ -1,4 +1,4 @@
-package com.thing.contract.client;
+package com.thing.contract.dto;
 
 import lombok.*;
 

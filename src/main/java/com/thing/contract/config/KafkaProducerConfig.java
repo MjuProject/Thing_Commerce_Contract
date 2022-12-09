@@ -1,4 +1,4 @@
-package com.thing.contract.service;
+package com.thing.contract.config;
 
 import org.apache.kafka.clients.producer.ProducerConfig;
 import org.apache.kafka.common.serialization.StringSerializer;
