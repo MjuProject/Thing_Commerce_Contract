@@ -7,19 +7,24 @@ spring:
   jpa:
     show-sql: true
     hibernate:
-      ddl-auto: create-drop
+      ddl-auto: none
       naming:
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
     properties:
       hibernate:
         format_sql: true
     defer-datasource-initialization: true
-    h2:
-      console:
-        enabled: true
-        settings:
-          web-allow-others: true
-        path: /h2-console
+  h2:
+    console:
+      enabled: true
+      settings:
+        web-allow-others: true
+      path: /h2-console
+  datasource:
+    driver-class-name: org.mariadb.jdbc.Driver
+    url: jdbc:mariadb://127.0.0.1:3307/contract
+    username: root
+    password: 4268
 
 eureka:
   instance:

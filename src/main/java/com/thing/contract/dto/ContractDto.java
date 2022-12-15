@@ -10,5 +10,5 @@ public class ContractDto {
     private Date createAt;
 
     private ClientDto client;
-    private ItemDto item;
+    private ItemDetailResponseDTO itemDetailResponseDTO;
 }

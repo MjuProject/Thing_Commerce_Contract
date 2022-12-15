@@ -2,6 +2,7 @@ package com.thing.contract.service;
 
 import com.thing.contract.dto.ClientDto;
 import com.thing.contract.client.ClientServiceFeignClient;
+import com.thing.contract.dto.ItemDetailResponseDTO;
 import com.thing.contract.dto.ItemDto;
 import com.thing.contract.client.ItemServiceFeignClient;
 import com.thing.contract.dto.ContractDto;
@@ -55,8 +56,8 @@ public class ContractServiceImpl implements  ContractService{
         contractDto.setCreateAt(contractEntity.getCreateAt());
         ClientDto clientDto = clientServiceFeignClient.getClient(contractEntity.getClientIndex()).getData();
         contractDto.setClient(clientDto);
-        ItemDto itemDto = itemServiceFeignClient.getItem(contractEntity.getItemId()).getData();
-        contractDto.setItem(itemDto);
+        ItemDetailResponseDTO itemDetailResponseDTO = itemServiceFeignClient.getItem(contractEntity.getItemId()).getData();
+        contractDto.setItemDetailResponseDTO(itemDetailResponseDTO);
         return contractDto;
     }
 
